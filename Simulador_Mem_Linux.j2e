@@ -1,0 +1,1 @@
+﻿"C:\Program Files (x86)\Jar2Exe Wizard\j2ewiz" /jar "C:\Users\Adrián\Desktop\TL2\RadGear - Simulador.jar" /o "C:\Users\Adrián\Desktop\TL2\RadGear - Simulador" /m GUIs.LogIn /type windows /minjre 1.8 /platform linux /encrypt /checksum /amd64
