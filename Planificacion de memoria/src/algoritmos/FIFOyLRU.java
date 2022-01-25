@@ -12,6 +12,8 @@ import recorridos.LRUConDA;
 import recorridos.LRUSinDA;
 import estructuras.Pagina_M;
 
+import java.awt.Toolkit;
+
 public class FIFOyLRU implements Runnable {
 	private String[] lote;
 	private int marcos;
@@ -72,5 +74,6 @@ public class FIFOyLRU implements Runnable {
 		GenerarSalida<Pagina_M> salida = new GenerarSalida<Pagina_M>(this.lote, this.res, this.pf, this.barra);
 		salida.generar(cantPF,this.alg);
 		this.btnIniciar.setEnabled(true);
+		Toolkit.getDefaultToolkit().beep();
 	}
 }
