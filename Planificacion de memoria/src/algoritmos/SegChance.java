@@ -10,6 +10,8 @@ import recorridos.GenerarSalida;
 import recorridos.SegChanceConDA;
 import estructuras.Pagina_R_M;
 
+import java.awt.Toolkit;
+
 public class SegChance implements Runnable {
 	private String[] lote;
 	private int marcos;
@@ -60,5 +62,6 @@ public class SegChance implements Runnable {
 		GenerarSalida<Pagina_R_M> salida = new GenerarSalida<Pagina_R_M>(this.lote, this.res, this.pf, this.barra);
 		salida.generar(cantPF,"SegChance");
 		this.btnIniciar.setEnabled(true);
+		Toolkit.getDefaultToolkit().beep();
 	}
 }
