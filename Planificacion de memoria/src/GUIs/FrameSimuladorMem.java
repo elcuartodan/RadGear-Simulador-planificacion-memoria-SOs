@@ -44,6 +44,18 @@ public class FrameSimuladorMem extends JFrame {
 	private JTextArea txtrLote;
 	private JCheckBox chckbxDA;
 	private JCheckBox chckbxMultProce;
+	
+	/**
+	 * Launch the application.
+	 */
+	public static void main(String[] args) {
+		try {
+			FrameSimuladorMem frame = new FrameSimuladorMem();
+			frame.setVisible(true);
+		} catch (Exception e) {
+			e.printStackTrace();
+		}
+	}
 
 	/**
 	 * Create the frame.
